@@ -9,7 +9,6 @@ fi
 MODEL_NAME="models.tar.gz"
 FILE_PATH="models/$MODEL_NAME"
 
-
 if [[ ! -f "$FILE_PATH" ]]; then
   echo "File $FILE_PATH does not exist."
   exit 1
