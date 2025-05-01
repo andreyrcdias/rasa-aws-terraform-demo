@@ -16,3 +16,8 @@ Before deploying the chatbot, ensure you have the following AWS resources set up
 
 ## Environment Configuration
 Make sure to set up the `.env` file located in the repository folders.
+
+## TODO
+- [ ] Setup remote terraform backend
+- [ ] Setup GitHub actions CI/CD
+
