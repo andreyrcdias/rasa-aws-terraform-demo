@@ -19,16 +19,6 @@ resource "aws_s3_bucket" "chatbot_models" {
   }
 }
 
-resource "aws_s3_bucket" "chatbot_resources" {
-  bucket        = "${var.app_name}-resources"
-  force_destroy = true
-
-  tags = {
-    Project = var.project
-    Name    = "${var.app_name}-resources"
-  }
-}
-
 resource "aws_cloudwatch_log_group" "api_log_group" {
   name              = "/aws/ecs/${var.app_name}-api/cluster"
   retention_in_days = 1

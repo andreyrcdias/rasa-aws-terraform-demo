@@ -10,14 +10,6 @@ output "chatbot_models_bucket_arn" {
   value = aws_s3_bucket.chatbot_models.arn
 }
 
-output "chatbot_resources_bucket_name" {
-  value = aws_s3_bucket.chatbot_resources.bucket
-}
-
-output "chatbot_resources_bucket_arn" {
-  value = aws_s3_bucket.chatbot_resources.arn
-}
-
 output "www_record_name" {
   value = aws_route53_record.www.name
 }
