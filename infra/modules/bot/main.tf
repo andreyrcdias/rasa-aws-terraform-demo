@@ -67,22 +67,6 @@ resource "aws_lb_target_group" "api_tc" {
   }
 }
 
-# resource "aws_lb_listener" "api_listener" {
-#   load_balancer_arn = aws_lb.api_lb.arn
-#   port              = 80
-#   protocol          = "TCP"
-#
-#   default_action {
-#     type             = "forward"
-#     target_group_arn = aws_lb_target_group.api_tc.arn
-#   }
-#
-#   tags = {
-#     Project = var.project
-#     Name    = var.app_name
-#   }
-# }
-
 resource "aws_lb_listener" "api_listener_https" {
   load_balancer_arn = aws_lb.api_lb.arn
   port              = 443
