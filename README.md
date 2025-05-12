@@ -28,4 +28,5 @@ Make sure to set up the `.env` file located in the repository folders.
 ## TODO
 - [ ] Setup remote terraform backend
 - [ ] Setup GitHub actions CI/CD
+## WIP
 - [ ] Setup the `web` widget on S3

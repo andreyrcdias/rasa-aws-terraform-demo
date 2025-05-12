@@ -1,3 +1,7 @@
+output "chatbot_url" {
+  value = "https://${module.web.chatbot_url}"
+}
+
 output "actions_url" {
   value = "https://${module.actions.www_record_name}"
 }
