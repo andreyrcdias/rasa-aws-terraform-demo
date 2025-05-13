@@ -146,7 +146,7 @@ resource "aws_cloudfront_distribution" "static_site_distribution" {
   enabled             = true
   default_root_object = "index.html"
 
-  aliases = [var.domain_name, "www.${var.domain_name}", "rag.${var.domain_name}", "api.${var.domain_name}", "actions.${var.domain_name}"]
+  aliases = [var.domain_name, "www.${var.domain_name}", "api.${var.domain_name}", "actions.${var.domain_name}"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
